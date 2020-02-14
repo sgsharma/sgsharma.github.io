@@ -719,7 +719,7 @@ pre code,
 pre tt {
     position: static;
     top: auto;
-    margin: -1.333em -1.333em -1.333em 1.333em;
+    margin:  -1.333em -1.333em 1.333em;
     padding: 1.333em;
     overflow: scroll;
     font-size: 0.75em;
