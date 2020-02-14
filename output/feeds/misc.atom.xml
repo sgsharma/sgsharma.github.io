@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>themightycomma - misc</title><link href="/" rel="alternate"></link><link href="/feeds/misc.atom.xml" rel="self"></link><id>/</id><updated>2020-02-13T13:13:00-08:00</updated><entry><title>Hello World (Or Setting Up My Macbook. Again.)</title><link href="/hello-world.html" rel="alternate"></link><published>2020-02-13T13:13:00-08:00</published><updated>2020-02-13T13:13:00-08:00</updated><author><name>Sasha Sharma</name></author><id>tag:None,2020-02-13:/hello-world.html</id><summary type="html">&lt;p&gt;Hello world.&lt;/p&gt;</summary><content type="html">&lt;p&gt;It's the kind of San Francisco gray day I like: nary a hint of sun and the world awash in gray tones worthy of a Seattle rainy day. A month ago, I'd have been at work, sipping pamplemousse sparkling water from a La Croix can (that's grapefruit if you didn't know; yeah I googled it). But I left my job as a software engineer at the end of January and my La Croix-less days began.&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>themightycomma - misc</title><link href="/" rel="alternate"></link><link href="/feeds/misc.atom.xml" rel="self"></link><id>/</id><updated>2020-02-13T13:13:00-08:00</updated><entry><title>In which I set up my Macbook. Again.</title><link href="/hello-world.html" rel="alternate"></link><published>2020-02-13T13:13:00-08:00</published><updated>2020-02-13T13:13:00-08:00</updated><author><name>Sasha Sharma</name></author><id>tag:None,2020-02-13:/hello-world.html</id><summary type="html">&lt;p&gt;I left my job as a software engineer at the end of January and my La Croix-less days began. So I set about looking for a long-forgotten non-work-issue laptop and began installing all the things yet again&lt;/p&gt;</summary><content type="html">&lt;p&gt;It's the kind of San Francisco gray day I like: nary a hint of sun and the world awash in gray tones worthy of a Seattle rainy day. A month ago, I'd have been at work, sipping pamplemousse sparkling water from a La Croix can (that's grapefruit if you didn't know; yeah I googled it). But I left my job as a software engineer at the end of January and my La Croix-less days began.&lt;/p&gt;
 &lt;p&gt;Although, my employers' snack game was pretty good (seriously, check out the &lt;a href="https://guardanthealth.com/careers/jobs/"&gt;GH careers&lt;/a&gt; page), I found myself physically and emotionally exhausted at the end of an year that included fairly advanced tuberculosis for me, a broken femur for my SO, and TB + an allergic reaction to TB medication for my SO. As the kids these days might say, shit was wild. &lt;/p&gt;
-&lt;p&gt;So, here I sit; TB-less, La Croix-less, jobless, dogless, on a break from the real world. I joined a gym, which has been nice (I can lift things folks!), I'm definitely running more, but mostly I've really missed making things, writing the codes and watching it bring something to life. Blogging about the codes seemed like a worthy alternative. I've always enjoyed talking to nobody in particular.&lt;/p&gt;
-&lt;p&gt;First came the inevitable search for a long-forgotten non-work issue laptop. Et voila, a 2014 13" Macbook pro presented itself. Next, installing all the things:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;iTerm &lt;/p&gt;
+&lt;p&gt;So, here I sit; TB-less, La Croix-less, jobless, dogless, on a break from the real world. I joined a gym, which has been nice (I can lift things folks!), I'm definitely running more, but mostly I've really missed making things, writing the codes and watching it bring something to life. Blogging about the codes seemed like a worthy alternative, I've always enjoyed talking to nobody in particular...&lt;/p&gt;
+&lt;p&gt;First, the inevitable search for a long-forgotten non-work issue laptop. Et voila, a 2014 13" Macbook pro presented itself and I am going to install all the things yet again:&lt;/p&gt;
+&lt;h3&gt;iTerm&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;Set up the &lt;a href="https://medium.com/@jonnyhaynes/jump-forwards-backwards-and-delete-a-word-in-iterm2-on-mac-os-43821511f0a"&gt;nice shortcuts&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;Set up the password manager with some &lt;a href="https://iterm2.com/documentation-triggers.html"&gt;triggers&lt;/a&gt; to quickly fill in at annoying password prompts at ev-e-r-y commit...&lt;/li&gt;
@@ -16,32 +14,46 @@
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Python3&lt;/p&gt;
-&lt;p&gt;```
+&lt;h3&gt;Python3 &amp;amp; Pip&lt;/h3&gt;
+&lt;p&gt;&lt;pre&gt;
 $ xcode-select --install
 $ /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 $ brew upgrade
-$ brew doctor&lt;/p&gt;
-&lt;h1&gt;I was also unfortunate enough to have to manually brew link several stuffs&lt;/h1&gt;
-&lt;p&gt;$ for i in $(cat ./tmp.txt); do brew link $i; done
+$ brew doctor
+&lt;/pre&gt;&lt;/p&gt;
+&lt;p&gt;I was also unfortunate enough to have to manually brew link several stuffs&lt;/p&gt;
+&lt;pre&gt;
+$ for i in $(cat ./tmp.txt); do brew link $i; done
 $ brew link --overwrite gnupg
-$ echo 'export PATH="/usr/local/sbin:$PATH"' &amp;gt;&amp;gt; ~/.bash_profile
+$ echo 'export PATH="/usr/local/sbin:$PATH"' &gt;&gt; ~/.bash_profile
 $ brew doctor
 $ source ~/.bash_profile
 $ brew install python3
-```
-I &lt;s&gt;don't much care for brew&lt;/s&gt; got a working install, yay!&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Pip &lt;/p&gt;
+&lt;/pre&gt;
+
+&lt;p&gt;I &lt;s&gt;don't much care for brew&lt;/s&gt; got a working install, yay! Next, install pip:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;$ curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h3&gt;Set up SSH key for my GitHub account&lt;/h3&gt;
+&lt;p&gt;Generate the key: &lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;$ ssh-keygen -t rsa -b &lt;span class="m"&gt;4096&lt;/span&gt; -C &lt;span class="s2"&gt;&amp;quot;&amp;lt;username&amp;gt;@&amp;lt;domain&amp;gt;.com&amp;quot;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Copy the contents of the .pub file generated under &lt;code&gt;New SSH Key&lt;/code&gt; &lt;a href="https://github.com/settings/keys"&gt;here&lt;/a&gt;&lt;/p&gt;
+&lt;h3&gt;VSCode&lt;/h3&gt;
+&lt;p&gt;Yep, I became a convert from PyCharm + Sublime a year or so ago and haven't looked back. I still do use the Sublime key bindings though.&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;code&gt;curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py&lt;/code&gt;&lt;/li&gt;
-&lt;/ul&gt;
+&lt;li&gt;Kick off the download &lt;a href="https://code.visualstudio.com/download"&gt;here&lt;/a&gt;. &lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Install the sublime keymap extension:
+&lt;img alt="Alt Text" src="images/sublime-keymap.gif"&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;Set up SSH key for my GitHub account &lt;/p&gt;
+&lt;p&gt;Add the code command in path:&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
+&lt;p&gt;&lt;code&gt;Command (or Cmd) ⌘ + Shift ⇧ + p&lt;/code&gt; should bring up the command palette. Type in 'shell command' to find the &lt;code&gt;Shell Command: Install 'code' command in PATH&lt;/code&gt; command. (&lt;a href="https://code.visualstudio.com/docs/setup/mac#_launching-from-the-command-line"&gt;Documentation here&lt;/a&gt;)&lt;/p&gt;
 &lt;p&gt;And that's it, I've got a&lt;s&gt;nother&lt;/s&gt; working setup! May the codes flow forth... &lt;/p&gt;</content><category term="misc"></category><category term="first"></category><category term="misc"></category></entry></feed>

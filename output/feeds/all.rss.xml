@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0"><channel><title>themightycomma</title><link>/</link><description></description><lastBuildDate>Thu, 13 Feb 2020 13:13:00 -0800</lastBuildDate><item><title>In which I set up my Macbook. Again.</title><link>/hello-world.html</link><description>&lt;p&gt;It's the kind of San Francisco gray day I like: nary a hint of sun and the world awash in gray tones worthy of a Seattle rainy day. A month ago, I'd have been at work, sipping pamplemousse sparkling water from a La Croix can (that's grapefruit if you didn't know; yeah I googled it). But I left my job as a software engineer at the end of January and my La Croix-less days began.&lt;/p&gt;
+<rss version="2.0"><channel><title>themightycomma</title><link>/</link><description>Breaking stuff.</description><lastBuildDate>Thu, 13 Feb 2020 13:13:00 -0800</lastBuildDate><item><title>In which I set up my Macbook. Again.</title><link>/2020/02/hello-world.html</link><description>&lt;p&gt;It's the kind of San Francisco gray day I like: nary a hint of sun and the world awash in gray tones worthy of a Seattle rainy day. A month ago, I'd have been at work, sipping pamplemousse sparkling water from a La Croix can (that's grapefruit if you didn't know; yeah I googled it). But I left my job as a software engineer at the end of January and my La Croix-less days began.&lt;/p&gt;
 &lt;p&gt;Although, my employers' snack game was pretty good (seriously, check out the &lt;a href="https://guardanthealth.com/careers/jobs/"&gt;GH careers&lt;/a&gt; page), I found myself physically and emotionally exhausted at the end of an year that included fairly advanced tuberculosis for me, a broken femur for my SO, and TB + an allergic reaction to TB medication for my SO. As the kids these days might say, shit was wild. &lt;/p&gt;
 &lt;p&gt;So, here I sit; TB-less, La Croix-less, jobless, dogless, on a break from the real world. I joined a gym, which has been nice (I can lift things folks!), I'm definitely running more, but mostly I've really missed making things, writing the codes and watching it bring something to life. Blogging about the codes seemed like a worthy alternative, I've always enjoyed talking to nobody in particular...&lt;/p&gt;
 &lt;p&gt;First, the inevitable search for a long-forgotten non-work issue laptop. Et voila, a 2014 13" Macbook pro presented itself and I am going to install all the things yet again:&lt;/p&gt;
@@ -15,21 +15,19 @@
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3&gt;Python3 &amp;amp; Pip&lt;/h3&gt;
-&lt;p&gt;&lt;pre&gt;
-$ xcode-select --install
-$ /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-$ brew upgrade
-$ brew doctor
-&lt;/pre&gt;&lt;/p&gt;
+&lt;p&gt;$ xcode-select --install
+    $ /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+    $ brew upgrade
+    $ brew doctor&lt;/p&gt;
 &lt;p&gt;I was also unfortunate enough to have to manually brew link several stuffs&lt;/p&gt;
-&lt;pre&gt;
-$ for i in $(cat ./tmp.txt); do brew link $i; done
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;$ &lt;span class="k"&gt;for&lt;/span&gt; i in &lt;span class="k"&gt;$(&lt;/span&gt;cat ./tmp.txt&lt;span class="k"&gt;)&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="k"&gt;do&lt;/span&gt; brew link &lt;span class="nv"&gt;$i&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="k"&gt;done&lt;/span&gt;
 $ brew link --overwrite gnupg
-$ echo 'export PATH="/usr/local/sbin:$PATH"' &gt;&gt; ~/.bash_profile
+$ &lt;span class="nb"&gt;echo&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;export PATH=&amp;quot;/usr/local/sbin:$PATH&amp;quot;&amp;#39;&lt;/span&gt; &amp;gt;&amp;gt; ~/.bash_profile
 $ brew doctor
-$ source ~/.bash_profile
+$ &lt;span class="nb"&gt;source&lt;/span&gt; ~/.bash_profile
 $ brew install python3
-&lt;/pre&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
 
 &lt;p&gt;I &lt;s&gt;don't much care for brew&lt;/s&gt; got a working install, yay! Next, install pip:&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;$ curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py
@@ -56,4 +54,16 @@ $ brew install python3
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;&lt;code&gt;Command (or Cmd) ⌘ + Shift ⇧ + p&lt;/code&gt; should bring up the command palette. Type in 'shell command' to find the &lt;code&gt;Shell Command: Install 'code' command in PATH&lt;/code&gt; command. (&lt;a href="https://code.visualstudio.com/docs/setup/mac#_launching-from-the-command-line"&gt;Documentation here&lt;/a&gt;)&lt;/p&gt;
-&lt;p&gt;And that's it, I've got a&lt;s&gt;nother&lt;/s&gt; working setup! May the codes flow forth... &lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Sasha Sharma</dc:creator><pubDate>Thu, 13 Feb 2020 13:13:00 -0800</pubDate><guid isPermaLink="false">tag:None,2020-02-13:/hello-world.html</guid><category>misc</category><category>first</category><category>misc</category></item></channel></rss>
+&lt;h3&gt;Miscellaneous&lt;/h3&gt;
+&lt;p&gt;These are things I can't live without, may Day 1 installs/TODOs:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.notion.so/"&gt;Notion&lt;/a&gt; for dealing with life at large&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://support.google.com/chrome/answer/95346?co=GENIE.Platform%3DDesktop&amp;amp;hl=en-GB"&gt;Chrome&lt;/a&gt; for you know, incognito mode&lt;/li&gt;
+&lt;li&gt;I also like to change the location of my screenshots to a directory on my desktop:&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;$ mkdir ~/Desktop/screenshots   
+$ defaults write com.apple.screencapture location ~/Desktop/screenshots
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;And that's it, I've got a&lt;s&gt;nother&lt;/s&gt; working setup! May the codes flow forth... &lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Sasha Sharma</dc:creator><pubDate>Thu, 13 Feb 2020 13:13:00 -0800</pubDate><guid isPermaLink="false">tag:None,2020-02-13:/2020/02/hello-world.html</guid><category>misc</category><category>first</category><category>misc</category></item></channel></rss>

@@ -14,8 +14,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="referrer" content="origin" />
   <meta name="generator" content="Pelican" />
-<link href="/hello-world.html" rel="canonical" />
+<link href="/2020/02/hello-world.html" rel="canonical" />
   <!-- Feed -->
+          <link href="/feed/atom/index.html" type="application/atom+xml" rel="alternate" title="themightycomma Atom Feed" />
+          <link href="/feed/index.html" type="application/rss+xml" rel="alternate" title="themightycomma RSS Feed" />
+          <link href="/category/{slug}/feed/atom/index.html" type="application/atom+xml" rel="alternate" title="themightycomma Categories Atom Feed" />
+          <link href="/category/{slug}/feed/index.html" type="application/rss+xml" rel="alternate" title="themightycomma Categories RSS Feed" />
 
   <link href="/theme/css/style.css" type="text/css" rel="stylesheet" />
 
@@ -51,17 +55,25 @@
 <meta property="og:title" content="In which I set up my Macbook. Again."/>
 <meta property="og:description" content="I left my job as a software engineer at the end of January and my La Croix-less days began. So I set about looking for a long-forgotten..."/>
 <meta property="og:locale" content="en_US"/>
-<meta property="og:url" content="/hello-world.html"/>
+<meta property="og:url" content="/2020/02/hello-world.html"/>
 <meta property="og:type" content="article"/>
 <meta property="article:published_time" content="2020-02-13 13:13:00-08:00"/>
 <meta property="article:modified_time" content="2020-02-13 13:13:00-08:00"/>
-<meta property="article:author" content="/author/sasha-sharma.html">
+<meta property="article:author" content="/author/sasha-sharma">
 <meta property="article:section" content="misc"/>
 <meta property="article:tag" content="first"/>
 <meta property="article:tag" content="misc"/>
 <meta property="og:image" content="/theme/images/post-bg.jpg">
 
 <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@themightycomma">
+    <meta name="twitter:title" content="In which I set up my Macbook. Again.">
+    <meta name="twitter:url" content="/2020/02/hello-world.html">
+
+        <meta name="twitter:image:src" content="/theme/images/post-bg.jpg">
+
+      <meta name="twitter:description" content="I left my job as a software engineer at the end of January and my La Croix-less days began. So I set about looking for a long-forgotten...">
 
 <script type="application/ld+json">
 {
@@ -74,10 +86,10 @@
   "author": {
     "@type": "Person",
     "name": "Sasha Sharma",
-    "url": "/author/sasha-sharma.html"
+    "url": "/author/sasha-sharma"
   },
   "image": "/theme/images/post-bg.jpg",
-  "url": "/hello-world.html",
+  "url": "/2020/02/hello-world.html",
   "description": "I left my job as a software engineer at the end of January and my La Croix-less days began. So I set about looking for a long-forgotten..."
 }
 </script>
@@ -115,7 +127,7 @@
         <h1 class="post-title">In which I set up my Macbook. Again.</h1>
         <!-- TODO : Proper class for headline -->
         <span class="post-meta">
-                <a href="/author/sasha-sharma.html">Sasha Sharma</a>
+                <a href="/author/sasha-sharma">Sasha Sharma</a>
             | <time datetime="Thu 13 February 2020">Thu 13 February 2020</time>
         </span>
         <!-- TODO : Modified check -->
@@ -147,10 +159,13 @@
 </li>
 </ul>
 <h3>Python3 &amp; Pip</h3>
-<p>$ xcode-select --install
-    $ /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-    $ brew upgrade
-    $ brew doctor</p>
+<div class="highlight"><pre><span></span><code>$ xcode-select --install
+$ /usr/bin/ruby -e <span class="s2">&quot;</span><span class="k">$(</span>curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install<span class="k">)</span><span class="s2">&quot;</span>
+$ brew upgrade
+$ brew doctor
+</code></pre></div>
+
+
 <p>I was also unfortunate enough to have to manually brew link several stuffs</p>
 <div class="highlight"><pre><span></span><code>$ <span class="k">for</span> i in <span class="k">$(</span>cat ./tmp.txt<span class="k">)</span><span class="p">;</span> <span class="k">do</span> brew link <span class="nv">$i</span><span class="p">;</span> <span class="k">done</span>
 $ brew link --overwrite gnupg
@@ -177,20 +192,29 @@ $ brew install python3
 <p>Yep, I became a convert from PyCharm + Sublime a year or so ago and haven't looked back. I still do use the Sublime key bindings though.</p>
 <ul>
 <li>Kick off the download <a href="https://code.visualstudio.com/download">here</a>. </li>
-<li>
-<p>Install the sublime keymap extension:
-<img alt="Alt Text" src="images/sublime-keymap.gif"></p>
-</li>
+<li>Install the sublime keymap extension:</li>
+</ul>
+<p><img alt="sublime-keymap" src="images/sublime-keymap.gif"></p>
+<ul>
 <li>
 <p>Add the code command in path:</p>
+<ol>
+<li>
+<p><code>Command (or Cmd) ⌘ + Shift ⇧ + p</code> should bring up the command palette. </p>
+</li>
+<li>
+<p>Type in 'shell command' to find the <code>Shell Command: Install 'code' command in PATH</code> command. (<a href="https://code.visualstudio.com/docs/setup/mac#_launching-from-the-command-line">Documentation here</a>)</p>
+</li>
+</ol>
 </li>
 </ul>
-<p><code>Command (or Cmd) ⌘ + Shift ⇧ + p</code> should bring up the command palette. Type in 'shell command' to find the <code>Shell Command: Install 'code' command in PATH</code> command. (<a href="https://code.visualstudio.com/docs/setup/mac#_launching-from-the-command-line">Documentation here</a>)</p>
 <h3>Miscellaneous</h3>
 <p>These are things I can't live without, may Day 1 installs/TODOs:</p>
 <ul>
 <li><a href="https://www.notion.so/">Notion</a> for dealing with life at large</li>
-<li><a href="https://support.google.com/chrome/answer/95346?co=GENIE.Platform%3DDesktop&amp;hl=en-GB">Chrome</a> for you know, incognito mode</li>
+<li><a href="https://support.google.com/chrome/answer/95346?co=GENIE.Platform%3DDesktop&amp;hl=en-GB">Chrome</a> for you know, stuff</li>
+<li><a href="https://www.spotify.com/us/">Spotify</a> for the tunes</li>
+<li><a href="https://apps.apple.com/us/app/magnet/id441258766?mt=12">Magnet</a> for workspace organization</li>
 <li>I also like to change the location of my screenshots to a directory on my desktop:</li>
 </ul>
 <div class="highlight"><pre><span></span><code>$ mkdir ~/Desktop/screenshots   
@@ -203,20 +227,20 @@ $ defaults write com.apple.screencapture location ~/Desktop/screenshots
 
             <section class="post-info">
                 <div class="post-share">
-                    <a class="twitter" href="https://twitter.com/share?text=In which I set up my Macbook. Again.&amp;url=/hello-world.html" onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
+                    <a class="twitter" href="https://twitter.com/share?text=In which I set up my Macbook. Again.&amp;url=/2020/02/hello-world.html" onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
                     <i class="ic ic-twitter"></i><span class="hidden">Twitter</span>
                     </a>
-                    <a class="facebook" href="https://www.facebook.com/sharer/sharer.php?u=/hello-world.html" onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
+                    <a class="facebook" href="https://www.facebook.com/sharer/sharer.php?u=/2020/02/hello-world.html" onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
                     <i class="ic ic-facebook"></i><span class="hidden">Facebook</span>
                     </a>
-                    <a class="googleplus" href="https://plus.google.com/share?url=/hello-world.html" onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;">
+                    <a class="googleplus" href="https://plus.google.com/share?url=/2020/02/hello-world.html" onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;">
                     <i class="ic ic-googleplus"></i><span class="hidden">Google+</span>
                     </a>
                     <div class="clear"></div>
                 </div>
 
                 <aside class="post-tags">
-<a href="/tag/first.html">first</a><a href="/tag/misc.html">misc</a>                </aside>
+<a href="/tag/first">first</a><a href="/tag/misc">misc</a>                </aside>
 
                 <div class="clear"></div>
 

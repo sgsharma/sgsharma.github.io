@@ -27,23 +27,25 @@ First, the inevitable search for a long-forgotten non-work issue laptop. Et voil
 
     
 ### Python3 & Pip
-<pre>
-$ xcode-select --install
-$ /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-$ brew upgrade
-$ brew doctor
-</pre>
+
+    $ xcode-select --install
+    $ /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+    $ brew upgrade
+    $ brew doctor
+
+
 
 I was also unfortunate enough to have to manually brew link several stuffs
 
-<pre>
-$ for i in $(cat ./tmp.txt); do brew link $i; done
-$ brew link --overwrite gnupg
-$ echo 'export PATH="/usr/local/sbin:$PATH"' >> ~/.bash_profile
-$ brew doctor
-$ source ~/.bash_profile
-$ brew install python3
-</pre>
+
+    $ for i in $(cat ./tmp.txt); do brew link $i; done
+    $ brew link --overwrite gnupg
+    $ echo 'export PATH="/usr/local/sbin:$PATH"' >> ~/.bash_profile
+    $ brew doctor
+    $ source ~/.bash_profile
+    $ brew install python3
+
+
 
 I <s>don't much care for brew</s> got a working install, yay! Next, install pip:
 
@@ -67,12 +69,29 @@ Yep, I became a convert from PyCharm + Sublime a year or so ago and haven't look
 
 - Kick off the download [here](https://code.visualstudio.com/download). 
 - Install the sublime keymap extension:
-![Alt Text](images/sublime-keymap.gif)
+
+![sublime-keymap](images/sublime-keymap.gif)
 
 - Add the code command in path:
 
-`Command (or Cmd) ⌘ + Shift ⇧ + p` should bring up the command palette. Type in 'shell command' to find the `Shell Command: Install 'code' command in PATH` command. ([Documentation here](https://code.visualstudio.com/docs/setup/mac#_launching-from-the-command-line))
+    1. `Command (or Cmd) ⌘ + Shift ⇧ + p` should bring up the command palette. 
+
+    2. Type in 'shell command' to find the `Shell Command: Install 'code' command in PATH` command. ([Documentation here](https://code.visualstudio.com/docs/setup/mac#_launching-from-the-command-line))
 
 
+### Miscellaneous
+
+These are things I can't live without, may Day 1 installs/TODOs:
+
+- [Notion](https://www.notion.so/) for dealing with life at large
+- [Chrome](https://support.google.com/chrome/answer/95346?co=GENIE.Platform%3DDesktop&hl=en-GB) for you know, stuff
+- [Spotify](https://www.spotify.com/us/) for the tunes
+- [Magnet](https://apps.apple.com/us/app/magnet/id441258766?mt=12) for workspace organization
+- I also like to change the location of my screenshots to a directory on my desktop:
+    
+```
+$ mkdir ~/Desktop/screenshots   
+$ defaults write com.apple.screencapture location ~/Desktop/screenshots
+```
 
 And that's it, I've got a<s>nother</s> working setup! May the codes flow forth... 

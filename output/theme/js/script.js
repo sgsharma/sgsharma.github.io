@@ -112,7 +112,7 @@ jQuery(function($) {
 	   ========================================================================== */
 
 	function codestyling() {
-		$('pre code').each(function(i, e) {
+		$('pre').each(function(i, e) {
 			hljs.highlightBlock(e);
 
 			if(!$(this).hasClass('language-text')) {
