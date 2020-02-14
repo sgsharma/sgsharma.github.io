@@ -1,11 +1,11 @@
 Title: In which I set up my Macbook. Again.
 Date: 2020-02-13 13:13
-Modified: 2020-02-13 13:13
 Category: misc
 Tags: first, misc
 Slug: hello-world
 Authors: Sasha Sharma
 Summary: I left my job as a software engineer at the end of January and my La Croix-less days began. So I set about looking for a long-forgotten non-work-issue laptop and began installing all the things yet again
+
 
 It's the kind of San Francisco gray day I like: nary a hint of sun and the world awash in gray tones worthy of a Seattle rainy day. A month ago, I'd have been at work, sipping pamplemousse sparkling water from a La Croix can (that's grapefruit if you didn't know; yeah I googled it). But I left my job as a software engineer at the end of January and my La Croix-less days began.
 
@@ -70,7 +70,7 @@ Yep, I became a convert from PyCharm + Sublime a year or so ago and haven't look
 - Kick off the download [here](https://code.visualstudio.com/download). 
 - Install the sublime keymap extension:
 
-![sublime-keymap](images/sublime-keymap.gif)
+![sublime-keymap]({attach}images/sublime-keymap.gif)
 
 - Add the code command in path:
 

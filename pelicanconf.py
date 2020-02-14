@@ -22,17 +22,17 @@ DEFAULT_LANG = 'en'
 # TRANSLATION_FEED_ATOM = None
 # AUTHOR_FEED_ATOM = None
 # AUTHOR_FEED_RSS = None
-FEED_RSS = 'feed/index.html'
-FEED_ATOM = 'feed/atom/index.html'
-FEED_ALL_RSS = None
-FEED_ALL_ATOM = None
-TRANSLATION_FEED_RSS = None
-TRANSLATION_FEED_ATOM = None
-AUTHOR_FEED_ATOM = None
-AUTHOR_FEED_RSS = None
+# FEED_RSS = 'feed/index.html'
+# FEED_ATOM = 'feed/atom/index.html'
+# FEED_ALL_RSS = None
+# FEED_ALL_ATOM = None
+# TRANSLATION_FEED_RSS = None
+# TRANSLATION_FEED_ATOM = None
+# AUTHOR_FEED_ATOM = None
+# AUTHOR_FEED_RSS = None
 
-TAG_FEED_RSS = 'tag/{slug}/feed/index.html'
-TAG_FEED_ATOM = 'tag/{slug}/feed/atom/index.html'
+# TAG_FEED_RSS = 'tag/{slug}/feed/index.html'
+# TAG_FEED_ATOM = 'tag/{slug}/feed/atom/index.html'
 
 # http://example.com/category/categoryname/feed
 CATEGORY_FEED_RSS = 'category/{slug}/feed/index.html'
@@ -60,12 +60,12 @@ YEAR_ARCHIVE_SAVE_AS = '{date:%Y}/index.html'
 MONTH_ARCHIVE_SAVE_AS = '{date:%Y}/{date:%m}/index.html'
 
 # Tags and Category path
-CATEGORY_URL = 'category/{slug}'
-CATEGORY_SAVE_AS = 'category/{slug}/index.html'
-CATEGORIES_SAVE_AS = 'catgegories.html'
-TAG_URL = 'tag/{slug}'
-TAG_SAVE_AS = 'tag/{slug}/index.html'
-TAGS_SAVE_AS = 'tags.html'
+# CATEGORY_URL = 'category/{slug}'
+# CATEGORY_SAVE_AS = 'category/{slug}/index.html'
+# CATEGORIES_SAVE_AS = 'catgegories.html'
+# TAG_URL = 'tag/{slug}'
+# TAG_SAVE_AS = 'tag/{slug}/index.html'
+# TAGS_SAVE_AS = 'tags.html'
 
 # Author
 AUTHOR_URL = 'author/{slug}'
