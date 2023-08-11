@@ -1,3 +1,6 @@
 [submodule "themes/eternity"]
 	path = themes/eternity
 	url = https://github.com/boratanrikulu/eternity.git
+[submodule "themes/eternity-alt"]
+	path = themes/eternity-alt
+	url = https://github.com/sgsharma/eternity-alt.git
