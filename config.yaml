@@ -1,7 +1,7 @@
 baseURL: https://themightycomma.com # todo: change site url.
 title: themightycomma # todo: change site name.
 defaultContentLanguage: 'en'
-theme: eternity
+theme: eternity-alt
 googleAnalytics: '' # todo: set your analytics id.
 
 params:
