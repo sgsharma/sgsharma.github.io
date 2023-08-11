@@ -1,0 +1,5 @@
+public/
+resources/
+.hugo_build.lock
+themes/
+.DS_Store
