@@ -3,3 +3,5 @@ resources/
 .hugo_build.lock
 themes/
 .DS_Store
+eternity-alt
+.todos
