@@ -2,6 +2,7 @@ baseURL: https://themightycomma.com # todo: change site url.
 title: themightycomma # todo: change site name.
 defaultContentLanguage: 'en'
 theme: eternity-alt
+themesDir: "."
 googleAnalytics: '' # todo: set your analytics id.
 
 params:
@@ -44,7 +45,7 @@ taxonomies:
   tag: tags
 
 permalinks:
-  work: ":filename/"
+  work: ":contentbasename/"
 
 # todo: uncomment menu.main array after you create contents.
 menu:
